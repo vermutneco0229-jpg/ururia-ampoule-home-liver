@@ -101,10 +101,10 @@ section { padding: 60px 24px; }
   margin: 0 auto;
 }
 
-/* Dark section */
+/* Dark section — replaced with light lavender */
 .dark-section {
-  background: linear-gradient(160deg, #1A1228 0%, #2D1B3D 50%, #1A1228 100%);
-  color: white;
+  background: var(--lavender-bg);
+  color: var(--text-dark);
 }
 
 /* Animations */
@@ -366,16 +366,15 @@ section { padding: 60px 24px; }
 
 /* ===== BABY-EXO ===== */
 .babyexo-section {
-  background: linear-gradient(160deg, #1A1228 0%, #2D1B3D 50%, #1A1228 100%);
-  color: white;
+  background: radial-gradient(ellipse 100% 60% at 50% 0%, rgba(200,184,232,0.35) 0%, transparent 70%), var(--lavender-bg);
 }
 .babyexo-headline {
   font-family: 'Noto Serif JP', serif;
-  font-size: 22px;
+  font-size: 26px;
   font-weight: 600;
   line-height: 1.7;
-  color: white;
-  margin: 20px 0 16px;
+  color: var(--text-dark);
+  margin: 20px 0 20px;
   letter-spacing: 0.03em;
 }
 .babyexo-headline em {
@@ -386,28 +385,29 @@ section { padding: 60px 24px; }
   background-clip: text;
 }
 .babyexo-lead {
-  font-size: 14px;
-  line-height: 2;
-  color: rgba(200, 184, 232, 0.85);
-  margin-bottom: 32px;
+  font-size: 15px;
+  line-height: 2.1;
+  color: var(--text-mid);
+  margin-bottom: 36px;
 }
 .babyexo-img {
   border-radius: 16px;
   overflow: hidden;
-  margin-bottom: 32px;
-  box-shadow: 0 12px 40px rgba(0,0,0,0.3);
+  margin-bottom: 36px;
+  box-shadow: 0 8px 32px rgba(150,120,210,0.15);
 }
 .fact-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 12px;
+  gap: 14px;
 }
 .fact-card {
-  background: rgba(255,255,255,0.06);
-  border: 1px solid rgba(200,184,232,0.2);
-  border-radius: 16px;
-  padding: 20px 16px;
+  background: white;
+  border: 1px solid var(--border-light);
+  border-radius: 20px;
+  padding: 28px 16px;
   text-align: center;
+  box-shadow: 0 4px 20px rgba(150,120,210,0.08);
 }
 .fact-card::before {
   content: '';
@@ -415,28 +415,28 @@ section { padding: 60px 24px; }
   width: 24px;
   height: 2px;
   background: linear-gradient(90deg, var(--aurora-purple), var(--aurora-pink));
-  margin: 0 auto 12px;
+  margin: 0 auto 14px;
 }
 .fact-num {
   font-family: 'Outfit', sans-serif;
   font-weight: 200;
-  font-size: 36px;
+  font-size: 42px;
   letter-spacing: -0.02em;
   background: linear-gradient(135deg, var(--aurora-purple), var(--aurora-pink));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   line-height: 1.1;
-  margin-bottom: 6px;
+  margin-bottom: 10px;
 }
 .fact-num.fact-sm {
-  font-size: 22px;
+  font-size: 24px;
   letter-spacing: 0;
 }
 .fact-label {
-  font-size: 12px;
-  color: rgba(200,184,232,0.85);
-  line-height: 1.6;
+  font-size: 13px;
+  color: var(--text-mid);
+  line-height: 1.7;
 }
 
 /* ===== LPS ===== */
@@ -614,13 +614,13 @@ section { padding: 60px 24px; }
 
 /* ===== ブランドストーリー ===== */
 .brand-section {
-  background: linear-gradient(160deg, #1A1228 0%, #2D1B3D 50%, #1A1228 100%);
-  color: white;
+  background: radial-gradient(ellipse 100% 60% at 50% 0%, rgba(200,184,232,0.35) 0%, transparent 70%), var(--lavender-bg);
+  color: var(--text-dark);
 }
 .brand-story {
   font-size: 15px;
   line-height: 2.2;
-  color: rgba(200, 184, 232, 0.85);
+  color: var(--text-mid);
   margin-bottom: 32px;
 }
 .compare-item {
@@ -628,10 +628,10 @@ section { padding: 60px 24px; }
   align-items: center;
   gap: 0;
   margin-bottom: 12px;
-  background: rgba(255,255,255,0.05);
+  background: white;
   border-radius: 14px;
   overflow: hidden;
-  border: 1px solid rgba(200,184,232,0.15);
+  border: 1px solid var(--border-light);
 }
 .compare-a, .compare-b {
   flex: 1;
@@ -640,8 +640,8 @@ section { padding: 60px 24px; }
   font-weight: 500;
   text-align: center;
 }
-.compare-a { color: rgba(200,184,232,0.7); }
-.compare-b { color: white; background: rgba(155,125,192,0.2); }
+.compare-a { color: var(--text-mid); }
+.compare-b { color: var(--aurora-purple); background: rgba(155,125,192,0.08); }
 .compare-arrow {
   padding: 14px 8px;
   color: var(--aurora-pink);
@@ -650,7 +650,7 @@ section { padding: 60px 24px; }
 .compare-note {
   text-align: center;
   font-size: 11px;
-  color: rgba(200,184,232,0.5);
+  color: var(--text-light);
   padding: 6px 0 12px;
   letter-spacing: 0.05em;
 }
@@ -658,13 +658,13 @@ section { padding: 60px 24px; }
   margin-top: 32px;
   text-align: center;
   padding: 16px;
-  border: 1px solid rgba(200,184,232,0.2);
+  border: 1px solid rgba(155,125,192,0.3);
   border-radius: 16px;
   font-family: 'Cormorant Garamond', serif;
   font-style: normal;
   font-size: 14px;
   letter-spacing: 0.2em;
-  color: var(--light-lavender);
+  color: var(--mid-purple);
 }
 
 /* ===== 使い方 ===== */
@@ -821,8 +821,8 @@ section { padding: 60px 24px; }
 
 /* ===== Footer CTA ===== */
 .footer-cta {
-  background: linear-gradient(160deg, #1A1228 0%, #2D1B3D 50%, #1A1228 100%);
-  color: white;
+  background: radial-gradient(ellipse 100% 60% at 50% 0%, rgba(200,184,232,0.35) 0%, transparent 70%), var(--lavender-bg);
+  color: var(--text-dark);
   text-align: center;
   padding: 60px 24px 80px;
 }
@@ -831,7 +831,7 @@ section { padding: 60px 24px; }
   font-style: normal;
   font-size: 28px;
   font-weight: 300;
-  color: white;
+  color: var(--text-dark);
   letter-spacing: 0.05em;
   line-height: 1.4;
   margin-bottom: 4px;
@@ -840,7 +840,7 @@ section { padding: 60px 24px; }
   font-family: 'Cormorant Garamond', serif;
   font-style: italic;
   font-size: 16px;
-  color: var(--light-lavender);
+  color: var(--mid-purple);
   letter-spacing: 0.1em;
   margin-bottom: 20px;
 }
@@ -860,12 +860,12 @@ section { padding: 60px 24px; }
   font-weight: 200;
   font-size: 52px;
   letter-spacing: -0.02em;
-  color: white;
+  color: var(--text-dark);
   line-height: 1;
 }
 .price-tax {
   font-size: 13px;
-  color: rgba(200,184,232,0.6);
+  color: var(--text-light);
   margin-top: 4px;
 }
 .footer-highlights {
@@ -875,9 +875,9 @@ section { padding: 60px 24px; }
 }
 .footer-highlights li {
   font-size: 14px;
-  color: rgba(200,184,232,0.8);
+  color: var(--text-mid);
   padding: 8px 0;
-  border-bottom: 1px solid rgba(200,184,232,0.1);
+  border-bottom: 1px solid var(--border-light);
   letter-spacing: 0.05em;
 }
 .footer-highlights li:last-child { border-bottom: none; }
@@ -886,14 +886,14 @@ section { padding: 60px 24px; }
   font-style: normal;
   font-size: 13px;
   letter-spacing: 0.3em;
-  color: rgba(200,184,232,0.5);
+  color: var(--text-light);
   margin-top: 24px;
 }
 .footer-copy {
   font-size: 16px;
   font-family: 'Noto Serif JP', serif;
   font-weight: 400;
-  color: var(--light-lavender);
+  color: var(--mid-purple);
   letter-spacing: 0.1em;
   margin-bottom: 8px;
 }
@@ -984,7 +984,7 @@ section { padding: 60px 24px; }
 
 <!-- ===== Section 3: BABY-EXO ===== -->
 <section class="babyexo-section fade-in">
-  <p class="eyebrow" style="color:rgba(200,184,232,0.6);">BABY-EXO Powder</p>
+  <p class="eyebrow">BABY-EXO Powder</p>
   <p style="font-size:13px; color:var(--aurora-pink); letter-spacing:0.08em; margin-bottom:4px;">BABY-EXO粉末的秘密</p>
 
   <h2 class="babyexo-headline">エステ業界が震撼する<br><em>「0歳児由来」</em>の<br>エクソソーム</h2>
@@ -1139,8 +1139,8 @@ section { padding: 60px 24px; }
 
 <!-- ===== Section 7: ブランドストーリー ===== -->
 <section class="brand-section fade-in">
-  <p class="eyebrow" style="color:rgba(200,184,232,0.5);">Brand Story</p>
-  <h2 class="sec-title" style="color:white; margin-bottom:8px;">日本サロン品質を、<br>おうちで毎日</h2>
+  <p class="eyebrow">Brand Story</p>
+  <h2 class="sec-title" style="margin-bottom:8px;">日本サロン品質を、<br>おうちで毎日</h2>
   <p style="font-size:13px; color:var(--aurora-purple); letter-spacing:0.08em; margin-bottom:28px;">日本沙龙品质，每天在家体验</p>
 
   <p class="brand-story">URURIA JAPANは京都発のプレミアム美容ブランド。エステサロンのプロが使う品質の処方を、ホームケアとして実現しました。<br><br>ampoulemania HOMEはサロン専用機器「plasmania（プラズマニア）」で使用する業務用美容液と同じ有効成分を配合。おうちで毎日、プロ品質のケアが続けられます。</p>
