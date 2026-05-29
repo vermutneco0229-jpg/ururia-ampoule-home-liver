@@ -667,6 +667,95 @@ section { padding: 60px 24px; }
   color: var(--mid-purple);
 }
 
+/* ===== 皮脂膜模倣オイル ===== */
+.sebum-section {
+  background: var(--white);
+  padding: 60px 24px;
+}
+.sebum-balance {
+  display: flex;
+  align-items: stretch;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 24px rgba(150,120,210,0.1);
+  margin: 32px 0 28px;
+  border: 1px solid var(--border-light);
+}
+.sebum-water {
+  flex: 8;
+  background: linear-gradient(135deg, rgba(122,188,216,0.18), rgba(155,125,192,0.12));
+  padding: 28px 20px;
+  text-align: center;
+}
+.sebum-oil {
+  flex: 2;
+  background: linear-gradient(135deg, rgba(216,120,176,0.18), rgba(200,184,232,0.15));
+  padding: 28px 14px;
+  text-align: center;
+}
+.sebum-ratio {
+  font-family: 'Outfit', sans-serif;
+  font-size: 48px;
+  font-weight: 200;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  margin-bottom: 6px;
+}
+.sebum-water .sebum-ratio {
+  background: linear-gradient(135deg, var(--aurora-blue), var(--aurora-purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.sebum-oil .sebum-ratio {
+  background: linear-gradient(135deg, var(--aurora-pink), var(--aurora-purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 36px;
+}
+.sebum-label {
+  font-size: 12px;
+  color: var(--text-mid);
+  letter-spacing: 0.08em;
+  font-weight: 400;
+}
+.sebum-desc {
+  font-size: 15px;
+  line-height: 2.1;
+  color: var(--text-mid);
+  margin-bottom: 28px;
+}
+.sebum-oils {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 24px;
+}
+.sebum-oil-tag {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 20px;
+  background: rgba(200,184,232,0.15);
+  border: 1px solid rgba(200,184,232,0.35);
+  font-size: 12px;
+  color: var(--mid-purple);
+  letter-spacing: 0.05em;
+}
+.sebum-point {
+  background: white;
+  border-radius: 20px;
+  padding: 24px 20px;
+  box-shadow: 0 4px 20px rgba(150,120,210,0.08);
+  border-left: 4px solid;
+  border-image: linear-gradient(180deg, var(--aurora-blue), var(--aurora-purple)) 1;
+  font-size: 15px;
+  line-height: 1.9;
+  color: var(--text-dark);
+  font-family: 'Noto Serif JP', serif;
+  font-weight: 500;
+}
+
 /* ===== 使い方 ===== */
 .howto-section {
   background: var(--white);
@@ -1167,6 +1256,43 @@ section { padding: 60px 24px; }
   <p class="compare-note">施術効果を日常でサポート</p>
 
   <div class="brand-badge">URURIA JAPAN  |  Made in Japan  |  京都</div>
+</section>
+
+<div class="a-line"></div>
+
+<!-- ===== Section: 皮脂膜模倣オイル ===== -->
+<section class="sebum-section fade-in">
+  <p class="eyebrow">Sebum-Mimicking Oil</p>
+  <h2 class="sec-title">「皮脂膜模倣オイル」配合で<br>導入効果を高める</h2>
+  <p style="font-size:13px; color:var(--aurora-purple); letter-spacing:0.08em; margin-bottom:24px;">皮脂膜仿生油，提升导入效果</p>
+
+  <p class="sebum-desc">人の皮脂膜が持つ水分と油分の理想バランスは<strong style="color:var(--text-dark);">8対2</strong>。ampoulemania HOMEはこのバランスをそのまま処方に再現。皮脂膜模倣オイルが角質細胞間脂質に入り込み、有効成分の"通り道"を整えることで、美容成分を肌の奥へと導きます。</p>
+
+  <div class="sebum-balance fade-in">
+    <div class="sebum-water">
+      <div class="sebum-ratio">80<span style="font-size:22px; font-weight:300;">%</span></div>
+      <div class="sebum-label">水性成分</div>
+    </div>
+    <div class="sebum-oil">
+      <div class="sebum-ratio">20<span style="font-size:16px; font-weight:300;">%</span></div>
+      <div class="sebum-label">油性成分</div>
+    </div>
+  </div>
+
+  <div class="sebum-point fade-in">
+    皮脂膜模倣オイルが角質細胞間脂質に入り込み、有効成分の"通り道"を整える
+  </div>
+
+  <div class="sebum-oils fade-in">
+    <span class="sebum-oil-tag">大豆油</span>
+    <span class="sebum-oil-tag">オリーブ油</span>
+    <span class="sebum-oil-tag">マカデミアナッツ油</span>
+    <span class="sebum-oil-tag">ローズヒップ油</span>
+    <span class="sebum-oil-tag">ホホバ油</span>
+    <span class="sebum-oil-tag">オリーブスクワラン</span>
+    <span class="sebum-oil-tag">小麦胚芽油</span>
+    <span class="sebum-oil-tag">蜜蝋</span>
+  </div>
 </section>
 
 <div class="a-line"></div>
